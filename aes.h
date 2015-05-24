@@ -79,7 +79,7 @@ typedef union
 #ifdef _WIN64
 __declspec(align(16))
 #endif
-#if defined(__GNUC__) || defined(__clang__) 
+#if defined(__GNUC__) || defined(__clang__)
 typedef struct __attribute__((aligned(16)))
 #else
 typedef struct
@@ -91,7 +91,7 @@ typedef struct
 #ifdef _WIN64
 __declspec(align(16))
 #endif
-#if defined(__GNUC__) || defined(__clang__) 
+#if defined(__GNUC__) || defined(__clang__)
 typedef struct __attribute__((aligned(16)))
 #else
 typedef struct
